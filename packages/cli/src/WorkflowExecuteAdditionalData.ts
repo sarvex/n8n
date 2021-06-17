@@ -387,12 +387,7 @@ function hookFunctionsSave(parentProcessMode?: string): IWorkflowExecuteHooks {
 					}
 
 					// Leave log message before flatten as that operation increased memory usage a lot and the chance of a crash is highest here
-					Logger.debug(`Save execution data to database for execution ID ${this.executionId}`, { 
-						executionId: this.executionId, 
-						workflowId: this.workflowData.id, 
-						finished: fullExecutionData.finished,
-						stoppedAt: fullExecutionData.stoppedAt,
-					});
+					Logger.debug(`Save execution data to database for execution ID ${this.executionId}`, { executionId: this.executionId, workflowId: this.workflowData.id });
 
 					const executionData = ResponseHelper.flattenExecutionData(fullExecutionData);
 
@@ -409,12 +404,6 @@ function hookFunctionsSave(parentProcessMode?: string): IWorkflowExecuteHooks {
 						executeErrorWorkflow(this.workflowData, fullRunData, this.mode, this.executionId, this.retryOf);
 					}
 				} catch (error) {
-					Logger.error(`Failed saving execution data to DB on execution ID ${this.executionId}`, { 
-						executionId: this.executionId, 
-						workflowId: this.workflowData.id,
-						error,
-					});
-					
 					if (!isManualMode) {
 						executeErrorWorkflow(this.workflowData, fullRunData, this.mode, undefined, this.retryOf);
 					}

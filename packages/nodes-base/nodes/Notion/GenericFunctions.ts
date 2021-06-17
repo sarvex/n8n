@@ -43,6 +43,7 @@ export async function notionApiRequest(this: IHookFunctions | IExecuteFunctions 
 		options = Object.assign({}, options, option);
 		const credentials = this.getCredentials('notionApi') as IDataObject;
 		options!.headers!['Authorization'] = `Bearer ${credentials.apiKey}`;
+		console.log(options);
 		return this.helpers.request!(options);
 
 	} catch (error) {
@@ -52,6 +53,8 @@ export async function notionApiRequest(this: IHookFunctions | IExecuteFunctions 
 
 export async function notionApiRequestAllItems(this: IExecuteFunctions | ILoadOptionsFunctions | IPollFunctions, propertyName: string, method: string, endpoint: string, body: any = {}, query: IDataObject = {}): Promise<any> { // tslint:disable-line:no-any
 
+	const resource = this.getNodeParameter('resource', 0) as string;
+
 	const returnData: IDataObject[] = [];
 
 	let responseData;
@@ -59,8 +62,11 @@ export async function notionApiRequestAllItems(this: IExecuteFunctions | ILoadOp
 	do {
 		responseData = await notionApiRequest.call(this, method, endpoint, body, query);
 		const { next_cursor } = responseData;
-		query['start_cursor'] = next_cursor;
-		body['start_cursor'] = next_cursor;
+		if (resource === 'block' || resource === 'user') {
+			query['start_cursor'] = next_cursor;
+		} else {
+			body['start_cursor'] = next_cursor;
+		}
 		returnData.push.apply(returnData, responseData[propertyName]);
 		if (query.limit && query.limit <= returnData.length) {
 			return returnData;
