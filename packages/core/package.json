@@ -51,7 +51,7 @@
   "dependencies": {
     "@n8n/client-oauth2": "workspace:*",
     "aws4": "^1.8.0",
-    "axios": "^0.21.1",
+    "axios": "^0.28.0",
     "concat-stream": "^2.0.0",
     "cron": "~1.7.2",
     "crypto-js": "~4.1.1",
