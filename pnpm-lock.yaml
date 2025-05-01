@@ -3009,16 +3009,16 @@ packages:
     resolution: {integrity: sha512-4IXXzcCdLdlXuCG+8UKEwLA1T1NHqUfanhXYHiQTn+6sfWCZXduqbtXDGceg3Ce5QxTGo7EqmbV6Bi+aqKuClQ==}
     engines: {node: '>=18.0.0'}
 
-  '@azure/msal-browser@3.19.0':
-    resolution: {integrity: sha512-3unHlh3qWtXbqks/TLq3qGWzxfmwRfk9tXSGvVCcHHnCH5QKtcg/JiDIeP/1B2qFlqnSgtYY0JPLy9EIVoZ7Ag==}
+  '@azure/msal-browser@3.28.1':
+    resolution: {integrity: sha512-OHHEWMB5+Zrix8yKvLVzU3rKDFvh7SOzAzXfICD7YgUXLxfHpTPX2pzOotrri1kskwhHqIj4a5LvhZlIqE7C7g==}
     engines: {node: '>=0.8.0'}
 
-  '@azure/msal-common@14.13.0':
-    resolution: {integrity: sha512-b4M/tqRzJ4jGU91BiwCsLTqChveUEyFK3qY2wGfZ0zBswIBZjAxopx5CYt5wzZFKuN15HqRDYXQbztttuIC3nA==}
+  '@azure/msal-common@14.16.0':
+    resolution: {integrity: sha512-1KOZj9IpcDSwpNiQNjt0jDYZpQvNZay7QAEi/5DLubay40iGYtLzya/jbjRPLyOTZhEKyL1MzPuw2HqBCjceYA==}
     engines: {node: '>=0.8.0'}
 
-  '@azure/msal-node@2.11.0':
-    resolution: {integrity: sha512-yNRCp4Do4CGSBe1WXq4DWhfa/vYZCUgGrweYLC5my/6eDnYMt0fYGPHuTMw0iRslQGXF3CecGAxXp7ab57V4zg==}
+  '@azure/msal-node@2.16.2':
+    resolution: {integrity: sha512-An7l1hEr0w1HMMh1LU+rtDtqL7/jw74ORlc9Wnh06v7TU/xpG39/Zdr1ZJu3QpjUfKJ+E0/OXMW8DRSWTlh7qQ==}
     engines: {node: '>=16'}
 
   '@azure/storage-blob@12.26.0':
@@ -7251,6 +7251,11 @@ packages:
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -11729,10 +11734,6 @@ packages:
     resolution: {integrity: sha512-MVHddDVweXZF3awtlAS+6pgKLlm/JgxZ90+/NBurBoQctVOOB/zDdVjcyPzQ+0laDGbsWgrRkflI65sQeOgT9Q==}
     engines: {node: '>=8'}
 
-  open@8.4.0:
-    resolution: {integrity: sha512-XgFPPM+B28FtCCgSb9I+s9szOC1vZRSwgWsRUA5ylIxRTgKozqjOCrVOqGsYABPYK5qnfqClxZTFBa8PKt2v6Q==}
-    engines: {node: '>=12'}
-
   open@8.4.2:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
@@ -12319,6 +12320,9 @@ packages:
     resolution: {integrity: sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==}
     engines: {node: '>= 0.10'}
     hasBin: true
+
+  psl@1.15.0:
+    resolution: {integrity: sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==}
 
   psl@1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
@@ -14774,7 +14778,7 @@ snapshots:
       '@smithy/util-middleware': 3.0.7
       '@smithy/util-retry': 3.0.7
       '@smithy/util-utf8': 3.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - aws-crt
 
@@ -14824,7 +14828,7 @@ snapshots:
       '@smithy/util-retry': 3.0.7
       '@smithy/util-stream': 3.1.9
       '@smithy/util-utf8': 3.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - aws-crt
 
@@ -14870,7 +14874,7 @@ snapshots:
       '@smithy/util-middleware': 3.0.7
       '@smithy/util-retry': 3.0.7
       '@smithy/util-utf8': 3.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - aws-crt
 
@@ -14916,7 +14920,7 @@ snapshots:
       '@smithy/util-middleware': 3.0.7
       '@smithy/util-retry': 3.0.7
       '@smithy/util-utf8': 3.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
       uuid: 9.0.1
     transitivePeerDependencies:
       - aws-crt
@@ -15088,7 +15092,7 @@ snapshots:
       '@smithy/util-retry': 3.0.7
       '@smithy/util-utf8': 3.0.0
       '@smithy/util-waiter': 3.1.6
-      tslib: 2.6.2
+      tslib: 2.8.1
       uuid: 9.0.1
     transitivePeerDependencies:
       - aws-crt
@@ -15224,7 +15228,7 @@ snapshots:
       '@smithy/util-middleware': 3.0.7
       '@smithy/util-retry': 3.0.7
       '@smithy/util-utf8': 3.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - aws-crt
 
@@ -15350,7 +15354,7 @@ snapshots:
       '@aws-sdk/types': 3.664.0
       '@smithy/property-provider': 3.1.7
       '@smithy/types': 3.5.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - aws-crt
 
@@ -15545,7 +15549,7 @@ snapshots:
       '@smithy/credential-provider-imds': 3.2.4
       '@smithy/property-provider': 3.1.7
       '@smithy/types': 3.5.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
@@ -15778,7 +15782,7 @@ snapshots:
   '@aws-sdk/protocol-http@3.374.0':
     dependencies:
       '@smithy/protocol-http': 1.2.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@aws-sdk/region-config-resolver@3.664.0':
     dependencies:
@@ -15819,7 +15823,7 @@ snapshots:
   '@aws-sdk/signature-v4@3.374.0':
     dependencies:
       '@smithy/signature-v4': 1.1.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@aws-sdk/token-providers@3.664.0(@aws-sdk/client-sso-oidc@3.666.0(@aws-sdk/client-sts@3.666.0))':
     dependencies:
@@ -15828,7 +15832,7 @@ snapshots:
       '@smithy/property-provider': 3.1.7
       '@smithy/shared-ini-file-loader': 3.1.8
       '@smithy/types': 3.7.2
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@aws-sdk/token-providers@3.799.0':
     dependencies:
@@ -15923,7 +15927,7 @@ snapshots:
 
   '@azure/abort-controller@1.1.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@azure/abort-controller@2.0.0':
     dependencies:
@@ -16074,8 +16078,8 @@ snapshots:
       '@azure/core-tracing': 1.2.0
       '@azure/core-util': 1.11.0
       '@azure/logger': 1.1.4
-      '@azure/msal-browser': 3.19.0
-      '@azure/msal-node': 2.11.0
+      '@azure/msal-browser': 3.28.1
+      '@azure/msal-node': 2.16.2
       events: 3.3.0
       jws: 4.0.0
       open: 8.4.2
@@ -16087,19 +16091,19 @@ snapshots:
   '@azure/identity@4.3.0':
     dependencies:
       '@azure/abort-controller': 1.1.0
-      '@azure/core-auth': 1.6.0
-      '@azure/core-client': 1.9.2
-      '@azure/core-rest-pipeline': 1.9.2
-      '@azure/core-tracing': 1.0.1
-      '@azure/core-util': 1.7.0
-      '@azure/logger': 1.0.3
-      '@azure/msal-browser': 3.19.0
-      '@azure/msal-node': 2.11.0
+      '@azure/core-auth': 1.9.0
+      '@azure/core-client': 1.9.3
+      '@azure/core-rest-pipeline': 1.19.1
+      '@azure/core-tracing': 1.2.0
+      '@azure/core-util': 1.11.0
+      '@azure/logger': 1.1.4
+      '@azure/msal-browser': 3.28.1
+      '@azure/msal-node': 2.16.2
       events: 3.3.0
       jws: 4.0.0
-      open: 8.4.0
+      open: 8.4.2
       stoppable: 1.1.0
-      tslib: 2.6.2
+      tslib: 2.8.1
     transitivePeerDependencies:
       - supports-color
 
@@ -16143,15 +16147,15 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@azure/msal-browser@3.19.0':
+  '@azure/msal-browser@3.28.1':
     dependencies:
-      '@azure/msal-common': 14.13.0
+      '@azure/msal-common': 14.16.0
 
-  '@azure/msal-common@14.13.0': {}
+  '@azure/msal-common@14.16.0': {}
 
-  '@azure/msal-node@2.11.0':
+  '@azure/msal-node@2.16.2':
     dependencies:
-      '@azure/msal-common': 14.13.0
+      '@azure/msal-common': 14.16.0
       jsonwebtoken: 9.0.2
       uuid: 8.3.2
 
@@ -19105,7 +19109,7 @@ snapshots:
   '@smithy/abort-controller@3.1.9':
     dependencies:
       '@smithy/types': 3.7.2
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/abort-controller@4.0.2':
     dependencies:
@@ -19206,7 +19210,7 @@ snapshots:
       '@aws-crypto/crc32': 5.2.0
       '@smithy/types': 3.7.2
       '@smithy/util-hex-encoding': 3.0.0
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/eventstream-codec@4.0.2':
     dependencies:
@@ -19333,7 +19337,7 @@ snapshots:
 
   '@smithy/is-array-buffer@2.2.0':
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/is-array-buffer@3.0.0':
     dependencies:
@@ -19460,7 +19464,7 @@ snapshots:
       '@smithy/protocol-http': 4.1.8
       '@smithy/querystring-builder': 3.0.11
       '@smithy/types': 3.7.2
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/node-http-handler@4.0.4':
     dependencies:
@@ -19483,7 +19487,7 @@ snapshots:
   '@smithy/protocol-http@1.2.0':
     dependencies:
       '@smithy/types': 1.2.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@smithy/protocol-http@3.3.0':
     dependencies:
@@ -19499,7 +19503,7 @@ snapshots:
   '@smithy/protocol-http@4.1.8':
     dependencies:
       '@smithy/types': 3.7.2
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/protocol-http@5.1.0':
     dependencies:
@@ -19510,7 +19514,7 @@ snapshots:
     dependencies:
       '@smithy/types': 3.7.2
       '@smithy/util-uri-escape': 3.0.0
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/querystring-builder@3.0.7':
     dependencies:
@@ -19561,7 +19565,7 @@ snapshots:
       '@smithy/util-middleware': 1.1.0
       '@smithy/util-uri-escape': 1.1.0
       '@smithy/util-utf8': 1.1.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@smithy/signature-v4@2.2.1':
     dependencies:
@@ -19630,7 +19634,7 @@ snapshots:
 
   '@smithy/types@3.7.2':
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/types@4.2.0':
     dependencies:
@@ -19684,7 +19688,7 @@ snapshots:
   '@smithy/util-buffer-from@2.2.0':
     dependencies:
       '@smithy/is-array-buffer': 2.2.0
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/util-buffer-from@3.0.0':
     dependencies:
@@ -19834,7 +19838,7 @@ snapshots:
 
   '@smithy/util-uri-escape@3.0.0':
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.2
 
   '@smithy/util-uri-escape@4.0.0':
     dependencies:
@@ -21260,6 +21264,8 @@ snapshots:
 
   acorn@8.14.0: {}
 
+  acorn@8.14.1: {}
+
   adm-zip@0.5.10: {}
 
   agent-base@6.0.2:
@@ -21538,7 +21544,7 @@ snapshots:
 
   ast-types@0.16.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   astral-regex@2.0.0: {}
 
@@ -26821,12 +26827,6 @@ snapshots:
       is-docker: 2.2.1
       is-wsl: 2.2.0
 
-  open@8.4.0:
-    dependencies:
-      define-lazy-prop: 2.0.0
-      is-docker: 2.2.1
-      is-wsl: 2.2.0
-
   open@8.4.2:
     dependencies:
       define-lazy-prop: 2.0.0
@@ -27409,6 +27409,10 @@ snapshots:
     dependencies:
       event-stream: 3.3.4
 
+  psl@1.15.0:
+    dependencies:
+      punycode: 2.3.1
+
   psl@1.9.0: {}
 
   pstree.remy@1.1.8: {}
@@ -27669,7 +27673,7 @@ snapshots:
       ast-types: 0.15.2
       esprima: 4.0.1
       source-map: 0.6.1
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   recast@0.23.6:
     dependencies:
@@ -27677,7 +27681,7 @@ snapshots:
       esprima: 4.0.1
       source-map: 0.6.1
       tiny-invariant: 1.3.3
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   rechoir@0.6.2:
     dependencies:
@@ -27967,11 +27971,11 @@ snapshots:
 
   rxjs@6.6.7:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   rxjs@7.8.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   safe-array-concat@1.1.2:
     dependencies:
@@ -28648,7 +28652,7 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       shallowequal: 1.1.0
       stylis: 4.3.1
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   stylis@4.3.1: {}
 
@@ -28830,7 +28834,7 @@ snapshots:
   terser@5.16.1:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.14.0
+      acorn: 8.14.1
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -28942,7 +28946,7 @@ snapshots:
 
   tough-cookie@4.1.4:
     dependencies:
-      psl: 1.9.0
+      psl: 1.15.0
       punycode: 2.3.1
       universalify: 0.2.0
       url-parse: 1.5.10
@@ -29035,7 +29039,7 @@ snapshots:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
       '@types/node': 18.16.16
-      acorn: 8.14.0
+      acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
       create-require: 1.1.1
@@ -29054,7 +29058,7 @@ snapshots:
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
       '@types/node': 18.19.87
-      acorn: 8.14.0
+      acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
       create-require: 1.1.1
@@ -29873,18 +29877,18 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.10
       fast-unique-numbers: 8.0.13
-      tslib: 2.6.2
+      tslib: 2.8.1
       worker-timers-worker: 7.0.71
 
   worker-timers-worker@7.0.71:
     dependencies:
       '@babel/runtime': 7.26.10
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   worker-timers@7.1.8:
     dependencies:
       '@babel/runtime': 7.26.10
-      tslib: 2.6.2
+      tslib: 2.8.1
       worker-timers-broker: 6.1.8
       worker-timers-worker: 7.0.71
 
